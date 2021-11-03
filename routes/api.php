@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('testApi',[APIController::class,'testApi']);
 
 Route::get('getDepartment/{id}',[APIController::class,'getDepartmentInfo']);
+Route::post('addDepartment',[APIController::class,'addDepartmentInfo']);
