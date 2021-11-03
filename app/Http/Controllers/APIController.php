@@ -13,7 +13,7 @@ class APIController extends Controller
     }
    public function getDepartmentInfo($id){
        $department = Department::find($id)->with('category')->get();
-       return response()->json(['department' => $department]);
+       return response()->json($department);
    }
 
 }

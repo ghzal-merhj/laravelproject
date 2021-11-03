@@ -7,8 +7,13 @@
     <title>Laravel Department Task </title>
 </head>
 <body>
+     <h3> Department Information </h3>
 
-
+     <ul>
+     <li>Name  : {{ $departmentData['title']}} </li>
+     <li>Description  : {{ $departmentData['description']}}</li>
+     <li>Category  : {{ $departmentData['category']['name'] }}</li>
+     </ul>
 
 </body>
 </html>

@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/','App\Http\Controllers\FrontEndController@viewDepartment' );
 
-    return view('index');
-});
-Route::get('category','App\Http\Controllers\CategoryController@myTest');
